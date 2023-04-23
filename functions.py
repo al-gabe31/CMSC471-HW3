@@ -87,32 +87,5 @@ def sim_run(epsilon = 0, num_instances = 2000, time_horizon = 1000):
             # Updates simulation plot variables
             average_observed_reward[i] += average_R[i] / num_instances
             optimal_selection_ratio[i] += optimal_proportion[i] / num_instances
-    
 
-
-    # # Below are print statements for debugging purposes
-    
-    # Prints index of optimal arm
-    # print(f"Optimal Arm {optimal_arm} = {q_star[optimal_arm]}\n\n")
-
-    # # Prints corresponding Q values
-    # for i in range(len(q_star)):
-    #     print(f"q*[{i}] = {round(q_star[i], 2)}\tQ[{i}] = {round(Q[i], 2)}")
-    # print("")
-    
-    # # Prints occurances of each arm
-    # print("Instaces of each arm")
-    # for i in range(len(q_star)):
-    #     print(f"Arm {i} --> {k_occur[i]}")
-    # print("")
-
-    # # Prints total reward
-    # print(f"Total reward = {total_reward}")
-
-    # # Prints plot values
-    # print(f"Average Reward = {average_R[-1]}")
-    # print(f"Optimal Proportion = {optimal_proportion[-1]}")
-    # print(f"Num optimal = {num_optimal}")
-
-    print("FINISHED SIM")
     return (average_observed_reward, optimal_selection_ratio)
