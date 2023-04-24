@@ -14,7 +14,7 @@ LINE_WIDTH = 2 # How thick each lines are
 # Returns a solution as a tuple of size 2
 #   0 - average_observed reward
 #   1 - optimal_selection_ratio
-def sim_run(epsilon = 0, num_instances = 2000, time_horizon = 1000):
+def epsilon_greedy(epsilon = 0, num_instances = 2000, time_horizon = 1000):
     # INITIALIZE VARIABLES FOR EACH SIMULATION RUN HERE:
 
     # y-axis for a
